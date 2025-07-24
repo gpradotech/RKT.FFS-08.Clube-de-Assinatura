@@ -1,0 +1,71 @@
+:root {
+/*//////////////////////////////////////////////////////////
+COLORS -----------------------------------------------------
+//////////////////////////////////////////////////////////*/
+  /* BRAND */
+  --color-brand-primary-light: #C59DD2;
+  --color-brand-primary-base: #9547A5;
+  --color-brand-primary-dark: #7D298A;
+  --color-brand-primary-low: #3F0F41;
+
+  --color-brand-secondary-light: #73B6D2;
+  --color-brand-secondary-base: #358BB9;
+  --color-brand-secondary-mid: #2374A4;
+  --color-brand-secondary-dark: #144A72;
+  --color-brand-secondary-low: #08233C;
+
+  /* SHAPE */
+  --color-shape-stroke: #002347;
+  --color-shape-hover: #001933;
+  --color-shape-base: #000F1F;
+  --color-shape-background: #00050A;
+
+  /* TEXT */
+  --color-text-title: #F8FBFB;
+  --color-text-body: #E2E7E9;
+  --color-text-label: #BAC6C9;
+
+/*//////////////////////////////////////////////////////////
+FONTS ------------------------------------------------------
+//////////////////////////////////////////////////////////*/
+  /* FONT FAMILY */
+  --ff-heading: "Raleway", sans-serif;
+  --ff-body: "Raleway", sans-serif;
+
+  /* FONT SIZE */
+  --fs-100: 0.625rem;
+  --fs-200: 0.75rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 2rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3rem;
+
+  /* FONT WEIGHT */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* LETTER SPACING */
+  --ls-100: 5%;
+
+  /* FONT TOKENS */
+  /*  font-style | font-weight | font-size/line-height | font-family */
+  --font-title-lg: normal var(--fw-bold) var(--fs-800) var(--ff-heading);
+  --font-title-md: normal var(--fw-bold) var(--fs-700) var(--ff-heading);
+  --font-title-sm: normal var(--fw-bold) var(--fs-600) var(--ff-heading);
+  --font-title-xs: normal var(--fw-bold) var(--fs-400) var(--ff-heading);
+  --font-subtitle-md: normal var(--fw-medium) var(--fs-600)/2 var(--ff-heading);
+  --font-body-lg-regular: normal var(--fw-regular) var(--fs-500)/1.4 var(--ff-body);
+  --font-body-lg-bold: normal var(--fw-bold) var(--fs-500)/1.4 var(--ff-body);
+  --font-body-md-regular: normal var(--fw-regular) var(--fs-400)/1.4 var(--ff-body);
+  --font-body-md-bold: normal var(--fw-bold) var(--fs-400)/1.4 var(--ff-body);
+  --font-body-sm-regular: normal var(--fw-regular) var(--fs-300)/1.4 var(--ff-body);
+  --font-body-sm-bold: normal var(--fw-bold) var(--fs-300)/1.4 var(--ff-body);
+  --font-body-xs-regular: normal var(--fw-regular) var(--fs-200)/1.4 var(--ff-body);
+  --font-body-xs-bold: normal var(--fw-bold) var(--fs-200)/1.4 var(--ff-body);
+  --font-button: normal var(--fw-bold) var(--fs-300) var(--ff-body);
+  --font-link: normal var(--fw-medium) var(--fs-300) var(--ff-body);
+  --font-tag: normal var(--fw-bold) var(--fs-100) var(--ff-body);
+}
