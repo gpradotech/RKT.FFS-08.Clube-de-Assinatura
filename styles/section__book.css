@@ -1,0 +1,11 @@
+.book__container {
+  & .book__content {
+    & .book__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      border: 1px solid red;
+    }
+  }
+}
