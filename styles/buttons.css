@@ -1,0 +1,37 @@
+.btn {
+  background: var(--color-brand-primary-dark);
+  font: var(--font-button);
+  padding-inline: 1.25rem;
+  min-height: 2.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  
+  & .btn__fx {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--color-brand-primary-base);
+    border-radius: 50%;
+    scale: 0;
+    position: absolute;
+    z-index: 0;
+    transition: scale .2s ease;
+    opacity: 0;
+  }
+  
+  &:hover .btn__fx {
+    scale: 1.5;
+    opacity: 1;
+  }
+
+  & .btn__label {
+    z-index: 1;
+  }
+}
