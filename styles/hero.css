@@ -12,14 +12,14 @@ HERO -------------------------------------------------------
     left: 0;
     right: 0;
     z-index: -1;
-    overflow: hidden;
     
     & .hero__image {
       object-fit: cover;
       aspect-ratio: 1440/948;
       min-height: 464px;
       max-height: 948px;
-      animation: moveInDown 4s ease forwards;
+      
+      animation: fadeIn 4s ease forwards;
     }
 
     & .hero__blur {
@@ -32,6 +32,20 @@ HERO -------------------------------------------------------
       left: 10%;
       bottom: 0;
       z-index: -10;
+    }
+
+    & .hero__light {
+      width: 200px;
+      height: 200px;
+      background: var(--color-brand-secondary-light);
+      border-radius: 50%;
+      position: absolute;
+      left: calc(50% - (200px/2));
+      bottom: 50px;
+      filter: blur(100px);
+      opacity: 0;
+
+      animation: pulse 5s ease-in-out infinite;
     }
   }
 
@@ -89,11 +103,17 @@ ANIMATION --------------------------------------------------
   }
 }
 
-@keyframes moveInDown {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  50% {
     opacity: 1;
   }
 }
