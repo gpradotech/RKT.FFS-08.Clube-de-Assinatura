@@ -1,0 +1,154 @@
+@import url(animation.css);
+
+/*//////////////////////////////////////////////////////////
+SECTION INFO -----------------------------------------------
+//////////////////////////////////////////////////////////*/
+.info__container {
+  width: 100%;
+  padding-block: 120px;
+
+  & .info__text-container {
+    position: relative;
+    width: 90%;
+    max-width: 1136px;
+    margin: 0 auto;
+    text-align: center;
+    padding-inline: 24px;
+    opacity: 0;
+    animation: show 2s 4.5s ease both;
+    
+    & .info__text {
+      animation: moveInUp ease;
+      animation-timeline: view();
+      animation-range: 0 400px;
+      transition: all 1s ease;
+      
+      & span {
+      color: var(----color-text-body);
+      opacity: .5;
+      }
+    
+      & strong {
+        opacity: .5;
+      }
+      
+      & .icon {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        scale: .8;
+        opacity: 0;
+  
+        &.icon__book {
+          transform: rotate(20deg);
+          top: -100px;
+          left: 30%;
+        }
+  
+        &.icon__ouija {
+          transform: rotate(100deg);
+          left: 15%;
+          bottom: -100px;
+        }
+        
+        &.icon__ball {
+          transform: rotate(15deg);
+          right: 15%;
+          bottom: -100px;
+        }
+      }
+    }
+  }
+}
+
+/*//////////////////////////////////////////////////////////
+RESPONSIVENESS ---------------------------------------------
+//////////////////////////////////////////////////////////*/
+@media (max-width: 767px) {
+  .info__container .info__text-container {
+    font: var(--font-body-md-regular);
+  }
+
+  .info__container .info__text-container .info__text strong {
+    color: var(--color-brand-secondary-light);
+  }
+
+  .info__container .info__text-container .info__text span,
+  .info__container .info__text-container .info__text strong {
+    opacity: 1;
+    animation: none;
+  }
+
+  .info__container .info__text-container .icon {
+    max-width: 40px;
+    max-height: 40px;
+    
+    &.icon__book {
+      opacity: 1;
+      top: -60px !important;
+      left: 30%;
+    }
+    
+    &.icon__ouija {
+        opacity: 1;
+        left: 15%;
+        bottom: -60px !important;
+      }
+      
+      &.icon__ball {
+        opacity: 1;
+        right: 15%;
+        bottom: -60px !important;
+      }
+  }
+}
+
+@media (min-width: 768px) {
+  .info__text-container {
+    font: var(--font-subtitle-md);
+  }
+  
+  .info__text.mouseover {
+        & span {
+          &:nth-child(1) {
+            animation: show .5s ease forwards;
+          }
+
+          &:nth-child(3) {
+            animation: show .5s .5s ease forwards;
+          }
+
+          &:nth-child(5) {
+            animation: show .5s 1s ease forwards;
+          }
+        }
+
+        & strong {       
+          &:nth-child(2) {
+            animation: showColor .5s ease forwards;
+          }
+
+          &:nth-child(4) {
+            animation: showColor .5s .5s ease forwards;
+          }
+
+          &:nth-child(6) {
+            animation: showColor .5s 1s ease forwards;
+          }
+        }
+
+        & .icon {
+          &:nth-child(7) {
+            animation: showIn .5s ease forwards, move 8s ease both infinite;
+          }
+
+          &:nth-child(8) {
+            animation: showIn .5s .5s ease forwards, moveOuija 8s 1s both ease infinite;
+          }
+
+          &:nth-child(9) {
+            animation: showIn .5s 1s ease forwards, move 8s 1.5s ease both infinite;
+          }
+        }
+      }
+}

@@ -1,13 +1,11 @@
+@import url(animation.css);
+
 /*//////////////////////////////////////////////////////////
 HERO -------------------------------------------------------
 //////////////////////////////////////////////////////////*/
 .hero__container {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-
   & .hero__background {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -18,20 +16,8 @@ HERO -------------------------------------------------------
       aspect-ratio: 1440/948;
       min-height: 464px;
       max-height: 948px;
-      
-      animation: fadeIn 4s ease forwards;
-    }
 
-    & .hero__blur {
-      width: 538px;
-      height: 538px;
-      background: var(--color-brand-primary-low);
-      border-radius: 50%;
-      /* filter: blur(434px); */
-      position: absolute;
-      left: 10%;
-      bottom: 0;
-      z-index: -10;
+      animation: fadeIn 4s ease forwards;
     }
 
     & .hero__light {
@@ -43,7 +29,7 @@ HERO -------------------------------------------------------
       left: calc(50% - (200px/2));
       bottom: 50px;
       filter: blur(100px);
-      opacity: 0;
+      opacity: .25;
 
       animation: pulse 5s ease-in-out infinite;
     }
@@ -59,6 +45,11 @@ HERO -------------------------------------------------------
     padding-inline: 24px;
     padding-top: clamp(72px, 1vh, 278px);
     overflow: hidden;
+
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
 
     & h1 {
       font: var(--font-title-lg);
@@ -78,7 +69,7 @@ HERO -------------------------------------------------------
 /*//////////////////////////////////////////////////////////
 RESPONSIVENESS ---------------------------------------------
 //////////////////////////////////////////////////////////*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero__container {
     & .hero__title {
       gap: 16px;
@@ -89,31 +80,8 @@ RESPONSIVENESS ---------------------------------------------
   }
 }
 
-/*//////////////////////////////////////////////////////////
-ANIMATION --------------------------------------------------
-//////////////////////////////////////////////////////////*/
-@keyframes moveInUp {
-  from {
-    transform: translateY(200%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes pulse {
-  50% {
-    opacity: 1;
+@media (max-width: 300px) { 
+  .hero__container .hero__title {
+    top: 64px;
   }
 }

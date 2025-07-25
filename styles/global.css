@@ -4,8 +4,17 @@ GLOBAL ----------------------------------------------------
 html {
   background: var(--color-shape-background);
   font: var(--font-body-md-regular);
+  color: var(--color-text-body)
 }
 
 img {
   width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app {
+  position: relative;
 }
