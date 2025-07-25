@@ -2,7 +2,6 @@
   position: fixed;
   width: 100vw;
   padding-inline: 32px;
-  border: 1px solid red;
 
   & .navigation {
     width: 100%;
@@ -11,7 +10,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    border: 1px solid blue;
 
     & .navigation__logo {
       background: url('./../img/informative/logo-horizontal.svg') no-repeat;
