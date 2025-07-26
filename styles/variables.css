@@ -37,9 +37,9 @@ FONTS ------------------------------------------------------
   --fs-200: 0.75rem;
   --fs-300: 0.875rem;
   --fs-400: 1rem;
-  --fs-500: 20px;
-  --fs-550: 24px;
-  --fs-600: 32px;
+  --fs-500: 1.25rem;
+  --fs-550: 1.5rem;
+  --fs-600: 2rem;
   --fs-700: 2.5rem;
   --fs-800: 3rem;
 
@@ -57,7 +57,7 @@ FONTS ------------------------------------------------------
   --font-title-md: normal var(--fw-bold) var(--fs-700) var(--ff-heading);
   --font-title-sm: normal var(--fw-bold) var(--fs-600) var(--ff-heading);
   --font-title-xs: normal var(--fw-bold) var(--fs-400) var(--ff-heading);
-  --font-subtitle-md: normal var(--fw-medium) var(--fs-600)/1.8 var(--ff-heading);
+  --font-subtitle-md: normal var(--fw-medium) var(--fs-600)/1.6 var(--ff-heading);
   --font-body-lg-regular: normal var(--fw-regular) var(--fs-500)/1.4 var(--ff-body);
   --font-body-lg-bold: normal var(--fw-bold) var(--fs-500)/1.4 var(--ff-body);
   --font-body-md-regular: normal var(--fw-regular) var(--fs-400)/1.4 var(--ff-body);
@@ -68,5 +68,5 @@ FONTS ------------------------------------------------------
   --font-body-xs-bold: normal var(--fw-bold) var(--fs-200)/1.4 var(--ff-body);
   --font-button: normal var(--fw-bold) var(--fs-300) var(--ff-body);
   --font-link: normal var(--fw-medium) var(--fs-300) var(--ff-body);
-  --font-tag: normal var(--fw-bold) var(--fs-100) var(--ff-body);
+  --font-tag: normal var(--fw-regular) var(--fs-100) var(--ff-body);
 }

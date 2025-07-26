@@ -14,8 +14,8 @@ SECTION INFO -----------------------------------------------
     margin: 0 auto;
     text-align: center;
     padding-inline: 24px;
-    opacity: 0;
-    animation: show 2s 4.5s ease both;
+    /* opacity: 0; */
+    /* animation: show 2s 4.5s ease both; */
     
     & .info__text {
       animation: moveInUp ease;

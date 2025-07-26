@@ -60,3 +60,47 @@ ANIMATION --------------------------------------------------
     transform: translate(-5px) rotate(80deg);
   }
 }
+
+
+/*//////////////////////////////////////////////////////////
+BOOK SECTION -----------------------------------------------
+//////////////////////////////////////////////////////////*/
+/* ////////////////////////////////////////////// YELLOW BOOKMARK */
+@keyframes bookmarkYellowIn {
+  from {
+    transform: translate(-100px, -370px) scale(1.2);
+  }
+  to {
+    transform: translate(-20px, -380px) rotate(12deg) scale(1.2);
+  }
+}
+
+@keyframes bookmarkYellowOut {
+  from {
+    transform: translate(-20px, -380px) rotate(12deg) scale(1.2);
+  }
+  to {
+    transform: translate(-100px, -370px) rotate(0deg) scale(1.2);
+  }
+}
+
+/* //////////////////////////////////////////// PURPLE BOOKMARK */
+@keyframes bookmarkPurpleIn {
+  from {
+    transform: translate(-300px, 80px) rotate(0deg) scale(1.2);
+  }
+  to {
+    transform: translate(-120px, 100px) rotate(22deg) scale(1.2);
+  }
+}
+
+@keyframes bookmarkPurpleOut {
+  from {
+    transform: translate(-120px, 100px) rotate(22deg) scale(1.2);
+  }
+  to {
+    transform: translate(-300px, 80px) rotate(0deg) scale(1.2);
+  }
+}
+
+/* ////////////////////////////////////////////////////// PIN */
