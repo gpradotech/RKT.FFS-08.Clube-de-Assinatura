@@ -61,6 +61,7 @@
         & .book__images-book {
           width: clamp(157px, 40vw, 467px);
           max-width: 100%;
+          transition: transform 1s ease;
         }
 
         & .book__images-bookmark-container {
@@ -280,6 +281,10 @@ RESPONSIVENESS ---------------------------------------------
       & .arrow-3,
       & .p-arrow-3 {
         opacity: 1;
+      }
+
+      & .book__images-book {
+        transform: scale(1.04);
       }
 
       & .book__images-pin {
