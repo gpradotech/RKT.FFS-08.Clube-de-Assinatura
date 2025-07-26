@@ -48,7 +48,6 @@
 
           &.p-arrow-2 {
             position: absolute;
-            /* top: clamp(30%, 15vw, 35%); */
             top: clamp(-300px, 30vw, -400px);
             left: calc(clamp(35px, 15vw, 104px)*-1);
           }
@@ -81,14 +80,7 @@
           position: relative;
         }
 
-        & .book__images-pin {
-          position: absolute;
-          width: clamp(75px, 15vw, 222px);
-          left: -20%;
-          bottom: -15%;
-          transform: rotate(-8deg);
-          z-index: -1;
-        }
+        /* AQUI */
 
         & .book__images-arrow {
           position: absolute;
@@ -124,6 +116,8 @@
         top: -1%;
         border-radius: 50%;
         filter: blur(100px);
+        animation: pulse 5s ease infinite;
+        opacity: .5;
       }
     }
   }
@@ -138,6 +132,15 @@ RESPONSIVENESS ---------------------------------------------
     bottom: 0;
     display: flex;
     align-items: center;
+  }
+
+  .book__images-pin {
+    position: absolute;
+    width: clamp(75px, 15vw, 222px);
+    left: -20%;
+    bottom: -15%;
+    transform: rotate(-8deg);
+    z-index: -1;
   }
 
   .book__images-bookmark {
@@ -279,6 +282,10 @@ RESPONSIVENESS ---------------------------------------------
         opacity: 1;
       }
 
+      & .book__images-pin {
+        animation: pinIn 1s ease both !important;
+      }
+
       & .bookmark-1 {
           animation: bookmarkYellowIn 1s ease both !important;
       }
@@ -298,19 +305,25 @@ RESPONSIVENESS ---------------------------------------------
       transition: opacity .5s ease;
     }
 
+    & .book__images-pin {
+        left: 10%;
+        bottom: 0;
+        transform: rotate(0deg);
+        animation: pinOut 1s ease both !important;
+      }
+
     & .book__images-bookmark {
       
       &:nth-child(1) {
         bottom: 50%;
         right: -20%;
         animation: bookmarkYellowOut 1s ease forwards;
-        transition: all 1s ease; 
       }
       
       &:nth-child(2) {
-          bottom: 10%;
-          right: -60%;
-          animation: bookmarkPurpleOut 1s forwards;
+        bottom: 10%;
+        right: -60%;
+        animation: bookmarkPurpleOut 1s forwards;
       }
     }
   }

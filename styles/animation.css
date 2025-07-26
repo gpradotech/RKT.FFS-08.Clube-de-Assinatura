@@ -65,7 +65,7 @@ ANIMATION --------------------------------------------------
 /*//////////////////////////////////////////////////////////
 BOOK SECTION -----------------------------------------------
 //////////////////////////////////////////////////////////*/
-/* ////////////////////////////////////////////// YELLOW BOOKMARK */
+/* YELLOW BOOKMARK */
 @keyframes bookmarkYellowIn {
   from {
     transform: translate(-100px, -370px) scale(1.2);
@@ -84,7 +84,7 @@ BOOK SECTION -----------------------------------------------
   }
 }
 
-/* //////////////////////////////////////////// PURPLE BOOKMARK */
+/* PURPLE BOOKMARK */
 @keyframes bookmarkPurpleIn {
   from {
     transform: translate(-300px, 80px) rotate(0deg) scale(1.2);
@@ -103,4 +103,21 @@ BOOK SECTION -----------------------------------------------
   }
 }
 
-/* ////////////////////////////////////////////////////// PIN */
+/* PIN */
+@keyframes pinIn {
+  from {
+    transform: translate(-0px, 0px) rotate(0deg) scale(1.2);
+  }
+  to {
+    transform: translate(-140px, 0) rotate(-12deg) scale(1.2);
+  }
+}
+
+@keyframes pinOut {
+  from {
+    transform: translate(-140px, 0px) rotate(-12deg) scale(1.2);
+  }
+  to {
+    transform: translate(0px, 0px) rotate(0deg) scale(1.2);
+  }
+}
