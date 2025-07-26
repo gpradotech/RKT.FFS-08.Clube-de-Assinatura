@@ -14,8 +14,6 @@ SECTION INFO -----------------------------------------------
     margin: 0 auto;
     text-align: center;
     padding-inline: 24px;
-    /* opacity: 0; */
-    /* animation: show 2s 4.5s ease both; */
     
     & .info__text {
       animation: moveInUp ease;
@@ -68,8 +66,18 @@ RESPONSIVENESS ---------------------------------------------
   .info__container .info__text-container {
     font: var(--font-body-md-regular);
   }
+}
 
-  .info__container .info__text-container .info__text strong {
+@media (min-width: 768px) {
+  .info__text-container {
+    font: var(--font-subtitle-md);
+  }
+  
+
+}
+
+@media (max-width: 1109px) {
+    .info__container .info__text-container .info__text strong {
     color: var(--color-brand-secondary-light);
   }
 
@@ -103,52 +111,48 @@ RESPONSIVENESS ---------------------------------------------
   }
 }
 
-@media (min-width: 768px) {
-  .info__text-container {
-    font: var(--font-subtitle-md);
-  }
-  
+@media (min-width: 1110px) {
   .info__text.mouseover {
-        & span {
-          &:nth-child(1) {
-            animation: show .5s ease forwards;
-          }
-
-          &:nth-child(3) {
-            animation: show .5s .5s ease forwards;
-          }
-
-          &:nth-child(5) {
-            animation: show .5s 1s ease forwards;
-          }
-        }
-
-        & strong {       
-          &:nth-child(2) {
-            animation: showColor .5s ease forwards;
-          }
-
-          &:nth-child(4) {
-            animation: showColor .5s .5s ease forwards;
-          }
-
-          &:nth-child(6) {
-            animation: showColor .5s 1s ease forwards;
-          }
-        }
-
-        & .icon {
-          &:nth-child(7) {
-            animation: showIn .5s ease forwards, move 8s ease both infinite;
-          }
-
-          &:nth-child(8) {
-            animation: showIn .5s .5s ease forwards, moveOuija 8s 1s both ease infinite;
-          }
-
-          &:nth-child(9) {
-            animation: showIn .5s 1s ease forwards, move 8s 1.5s ease both infinite;
-          }
-        }
+    & span {
+      &:nth-child(1) {
+        animation: show .5s ease forwards;
       }
+
+      &:nth-child(3) {
+        animation: show .5s .5s ease forwards;
+      }
+
+      &:nth-child(5) {
+        animation: show .5s 1s ease forwards;
+      }
+    }
+
+    & strong {       
+      &:nth-child(2) {
+        animation: showColor .5s ease forwards;
+      }
+
+      &:nth-child(4) {
+        animation: showColor .5s .5s ease forwards;
+      }
+
+      &:nth-child(6) {
+        animation: showColor .5s 1s ease forwards;
+      }
+    }
+
+    & .icon {
+      &:nth-child(7) {
+        animation: showIn .5s ease forwards, move 8s ease both infinite;
+      }
+
+      &:nth-child(8) {
+        animation: showIn .5s .5s ease forwards, moveOuija 8s 1s both ease infinite;
+      }
+
+      &:nth-child(9) {
+        animation: showIn .5s 1s ease forwards, move 8s 1.5s ease both infinite;
+      }
+    }
+  }
 }
