@@ -28,7 +28,7 @@
     & .book__images {
       display: flex;
       justify-content: center;
-      margin-block: 240px;
+      margin-block: 120px;
       position: relative;
 
       & .book__images-container {
