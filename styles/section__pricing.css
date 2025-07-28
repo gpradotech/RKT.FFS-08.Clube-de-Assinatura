@@ -17,6 +17,14 @@ SECTION PRICING --------------------------------------------
     justify-content: center;
     align-items: center;
 
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     & .pricing__cards-container {
       display: flex;
       gap: 16px;
