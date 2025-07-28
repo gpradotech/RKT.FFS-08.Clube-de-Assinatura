@@ -14,7 +14,7 @@ BLUR BACKGROUND --------------------------------------------
     width: 490px;
     height: 490px;
     border-radius: 50%;
-    filter: blur(400px);
+    filter: blur(800px);
 
     position: absolute;
     top: 500px;
@@ -26,7 +26,7 @@ BLUR BACKGROUND --------------------------------------------
     width: 490px;
     height: 490px;
     border-radius: 50%;
-    filter: blur(400px);
+    filter: blur(800px);
 
     position: absolute;
     top: 500px;
@@ -38,7 +38,7 @@ BLUR BACKGROUND --------------------------------------------
     width: 490px;
     height: 490px;
     border-radius: 50%;
-    filter: blur(400px);
+    filter: blur(800px);
 
     position: absolute;
     top: 1000px;
