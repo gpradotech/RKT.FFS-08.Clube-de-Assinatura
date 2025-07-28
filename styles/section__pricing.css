@@ -1,0 +1,223 @@
+/*//////////////////////////////////////////////////////////
+SECTION PRICING --------------------------------------------
+//////////////////////////////////////////////////////////*/
+.pricing__container {
+  min-width: 100vw;
+  padding-block: 120px;
+  
+  & .pricing__title {
+    text-align: center;
+    padding: 24px;
+    font: (--font-title-sm);
+    margin-bottom: 56px;
+  }
+
+  & .pricing__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .pricing__cards-container {
+      display: flex;
+      gap: 16px;
+      max-width: 100%;
+      width: auto;
+      padding-inline: 24px;
+      padding-block: 50px;
+
+      & .pricing__card {
+        background: var(--color-shape-base);
+        border: 1px solid var(--color-shape-stroke);
+        min-height: 416px;
+        padding: 32px 32px 28px 32px;
+        border-radius: 24px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        position: relative;
+
+        transition: all .4s ease;
+
+        & .svg {
+          position: absolute;
+          z-index: -1;
+  
+          &.rabbit {
+            top: -48px;
+          }
+  
+          &.stars-1 {
+            top: -32px;
+            left: -20px;
+          }
+
+          &.stars-2 {
+            right: -20px;
+            bottom: -32px;
+          }
+        }
+
+
+        &:not(.main-card) {
+          & li svg {
+            filter: drop-shadow(0 0 12px #358BB950);
+            
+            & path {
+              fill: var(--color-brand-secondary-base);
+            }
+          }
+        }
+
+        & .pricing__card-row-1 {
+          
+
+          & .pricing__card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+  
+            & .pricing__card-plan {
+              font: var(--font-title-xs);
+              color: var(--color-brand-secondary-light);
+              font-size: clamp(0.75rem, 5vw, 1rem);
+              
+              &.main-plan {
+                color: var(--color-brand-primary-light);
+              }
+            }
+  
+            & .pricing__card-tag {
+              font: var(--font-tag);
+              text-transform: uppercase;
+              letter-spacing: 0.125rem;
+              background: var(--color-shape-stroke);
+              padding: 8px 12px;
+              border-radius: 999px;
+            }
+          }
+  
+          & .pricing__card-price-container {
+            & .pricing__card-price {
+              font: var(--font-title-md);
+              margin-block: 24px 8px;
+              font-size: clamp(1.5rem, 5vw, 2rem);
+              white-space: nowrap;
+              
+              & small {
+                font: var(--font-title-xs);
+              }
+            }
+  
+            & .pricing__card-caption {
+              font: var(--font-body-sm-regular);
+              color: var(--color-text-label)
+            }
+          }
+        }
+
+
+        & .pricing__card-row-2 {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          justify-content: flex-end;
+          flex: 1;
+
+          & .pricing__card-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 12px;
+  
+            & li {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              
+              
+              & span {
+                font: var(--font-body-xs-regular);
+                font-size: clamp(0.65rem, 5vw, 0.6875rem);
+              }
+
+              & svg {
+                filter: drop-shadow(0 0 12px #9547A550);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .pricing__blur {
+    width: 100%;
+    height: 100%;
+    background: var(--color-shape-base);
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -10;
+  }
+
+  & .pricing__background {
+    position: absolute;
+    bottom: 0;
+    z-index: -5;
+  }
+}
+
+/*//////////////////////////////////////////////////////////
+RESPONSIVENESS ---------------------------------------------
+//////////////////////////////////////////////////////////*/
+/* smartphones */
+@media (min-width: 1px) {
+  .pricing__container {
+    & .pricing__cards {
+      & .pricing__cards-container {
+      overflow: auto;
+      display: flex;
+      justify-content: flex-start;
+      width: fit-content;
+      margin: 0 auto;
+      }
+      & .pricing__card {
+        width: 100vw;
+        min-width: 245px;
+        max-width: clamp(272px, 10vw, 288px);
+      }
+    }
+  }
+  
+
+}
+
+/* notebooks */
+@media (min-width: 1110px) {
+
+  .pricing__container {
+    & .pricing__cards {
+      & .pricing__cards-container {
+        position: relative;
+        overflow: visible;
+        & .pricing__card {
+          &.main-card {
+            z-index: 10;
+          }
+
+          &:not(.main-card) {
+            position: absolute;
+            z-index: 1;
+            bottom: 50px;
+          }
+          &:hover {
+            background: var(--color-shape-hover);
+          }
+        }
+      }
+    }
+  }
+}
