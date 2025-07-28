@@ -7,6 +7,7 @@ FOOTER -----------------------------------------------------
   background: url("./../img/decorative/book-trace-background.png") center no-repeat;
   background-size: cover;   
   aspect-ratio: 1440/415;
+  width: 100%;
 
   & .footer__content {
     max-width: 1120px;
