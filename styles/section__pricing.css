@@ -25,6 +25,14 @@ SECTION PRICING --------------------------------------------
       padding-inline: 24px;
       padding-block: 50px;
 
+      overflow-x: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
       & .pricing__card {
         background: var(--color-shape-base);
         border: 1px solid var(--color-shape-stroke);
