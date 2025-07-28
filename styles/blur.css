@@ -18,7 +18,7 @@ BLUR BACKGROUND --------------------------------------------
 
     position: absolute;
     top: 500px;
-    right: 0;
+    right: -25%;
   }
 
   & .blur-2 {
@@ -30,7 +30,7 @@ BLUR BACKGROUND --------------------------------------------
 
     position: absolute;
     top: 500px;
-    left: 0;
+    left: -25%;
   }
 
     & .blur-3 {
@@ -41,7 +41,7 @@ BLUR BACKGROUND --------------------------------------------
     filter: blur(800px);
 
     position: absolute;
-    top: 1000px;
+    top: 500px;
     left: calc(50% - 490px/2);
     right: 0;
   }

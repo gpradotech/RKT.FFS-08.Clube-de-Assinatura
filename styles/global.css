@@ -19,3 +19,21 @@ body {
 .app {
   position: relative;
 }
+
+.sr-only {
+	position: absolut;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset (0px 0px 99.9% 99.9%);
+	clip-path: inset (0px 0px 99.9% 99.9%);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	padding: 0;
+	border: 0;
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 2px solid #3399FF;
+  outline-offset: 4px;
+}

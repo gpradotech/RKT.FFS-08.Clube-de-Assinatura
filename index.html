@@ -17,8 +17,6 @@
   <meta name="keywords" content="Full-Stack, HTML, CSS, Rocketseat, Assinatura, Leitura, Livros, Animação">
   <!-- Nome do autor -->
   <meta name="author" content="Gustavo Prado">
-  <!-- Idioma da página -->
-  <meta name="language" content="pt-BR">
   <!-- Instrução de indexação para mecanismos de busca -->
   <meta name="robots" content="index, follow">
   <!-- URL oficial da página -->
@@ -65,16 +63,16 @@
     <!-- HERO -->
     <main class="hero__container">
       <header class="navigation__container">
-        <nav class="navigation">
-          <div class="navigation__logo"></div>
+        <nav class="navigation" aria-label="Navegação principal">
+          <div class="navigation__logo" aria-hidden="true"></div>
           <a href="#assinar" class="navigation__link btn">
             <span class="btn__label">Assinar</span>
-            <div class="btn__fx"></div>
+            <div class="btn__fx" aria-hidden="true"></div>
           </a>
         </nav>
       </header>
-      <div class="hero__background">
-        <img class="hero__image" src="./img/decorative/hero-background.png" alt="">
+      <div class="hero__background" aria-hidden="true">
+        <img class="hero__image" src="./img/decorative/hero-background.png" alt="" role="presentation">
         <div class="hero__light"></div>
       </div>
       <div class="hero__title">
@@ -83,7 +81,8 @@
       </div>
     </main>
     <!-- SECTION INFO -->
-    <section class="info__container">
+    <section class="info__container" aria-labelledby="info-title">
+      <h2 id="info-title" class="sr-only">Informações sobre o clube</h2>
       <div class="info__text-container">
         <p class="info__text">
           <span>Receba todo mês um</span>
@@ -92,9 +91,9 @@
           <strong>brindes exclusivos</strong>
           <span>que tornarão a sua experiência literária</span>
           <strong>encantadora</strong>
-          <img class="icon icon__book" src="./img/decorative/mystery-opened-spellbook.png" alt="">
-          <img class="icon icon__ouija" src="./img/decorative/mystery-ouija-planchette.png" alt="">
-          <img class="icon icon__ball" src="./img/decorative/mystery-crystal-ball.png" alt="">
+          <img class="icon icon__book" src="./img/decorative/mystery-opened-spellbook.png" alt="" role="presentation">
+          <img class="icon icon__ouija" src="./img/decorative/mystery-ouija-planchette.png" alt="" role="presentation">
+          <img class="icon icon__ball" src="./img/decorative/mystery-crystal-ball.png" alt="" role="presentation">
         </p>
       </div>
     </section>
