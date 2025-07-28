@@ -121,3 +121,42 @@ BOOK SECTION -----------------------------------------------
     transform: translate(0px, 0px) rotate(0deg) scale(1.2);
   }
 }
+
+/*//////////////////////////////////////////////////////////
+PRICING SECTION --------------------------------------------
+//////////////////////////////////////////////////////////*/
+@keyframes card1HoverIn {
+  from {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+  to {
+    transform: translateX(-280px) translateY(20px) rotate(-8deg);
+  }
+}
+
+@keyframes card1HoverOut {
+  from {
+    transform: translateX(-280px) translateY(20px) rotate(-8deg);
+  }
+  to {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes card3HoverIn {
+  from {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+  to {
+    transform: translateX(280px) translateY(20px) rotate(8deg);
+  }
+}
+
+@keyframes card3HoverOut {
+  from {
+    transform: translateX(280px) translateY(20px) rotate(8deg);
+  }
+  to {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+}

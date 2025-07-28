@@ -203,18 +203,41 @@ RESPONSIVENESS ---------------------------------------------
       & .pricing__cards-container {
         position: relative;
         overflow: visible;
+        
+        &:hover {    
+          & .card-1 {
+          animation: card1HoverIn .5s ease forwards !important;
+          }
+          & .card-3 {
+          animation: card3HoverIn .5s ease forwards !important;
+          }
+        }
+        
         & .pricing__card {
           &.main-card {
             z-index: 10;
+          }
+
+          &.card-1 {
+            animation: card1HoverOut .5s ease both;
+          }
+          
+          &.card-3 {
+            animation: card3HoverOut .5s ease both;
           }
 
           &:not(.main-card) {
             position: absolute;
             z-index: 1;
             bottom: 50px;
+
+            &:hover {
+              bottom: 70px;
+            }
           }
           &:hover {
             background: var(--color-shape-hover);
+            transform: translateY(-20px);
           }
         }
       }
